@@ -20,7 +20,7 @@ import Day3c from './assets/Day3c.jpg';
 import Day3z from './assets/Day3z.jpg';
 
 import Day4z from './assets/Day4z.jpg';
-import Day4c from './assets/Day4c.jpg';
+import Day4c from './assets/day4c.jpg';
 import Day4e from './assets/Day4e.jpg';
 
 import dDay5 from './assets/dDay5.jpg';
