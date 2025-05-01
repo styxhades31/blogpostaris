@@ -74,9 +74,17 @@ function App() {
       reflection: 'Visiting the MMDA was an eye-opening experience as we saw firsthand how they manage the complex task of traffic regulation and public safety in such a densely populated area. We were impressed by their integrated systems that help ease congestion and ensure public safety in Metro Manila. The afternoon trip to LRT-2 gave us an appreciation for modern public transportation systems and how they contribute to sustainable urban development. The experience highlighted the importance of technological solutions in urban mobility and how they can improve the daily lives of commuters.'
     },
   ];
+    const preloadImages = (images) => {
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  };
   const openModal = (cardIndex) => {
-    setSelectedCard(cardData[cardIndex]);
+    const card = cardData[cardIndex];
+    setSelectedCard(card);
     setCurrentImageIndex(0);
+    preloadImages(card.images); // <-- preload all images for this card
     setIsModalOpen(true);
   };
 
