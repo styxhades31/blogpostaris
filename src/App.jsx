@@ -20,12 +20,23 @@ import Day3c from './assets/Day3c.jpg';
 import Day3z from './assets/Day3z.jpg';
 
 import Day4z from './assets/Day4z.jpg';
-import Day4c from './assets/day4c.jpg';
+import Day4c from './assets/Day4c.jpg';
 import Day4e from './assets/Day4e.jpg';
 
 import dDay5 from './assets/dDay5.jpg';
 import dDay5a from './assets/dDay5a.jpg';
 import dDay5b from './assets/dDay5b.jpg';
+
+import Day6 from './assets/Day6.jpg';
+import Day6a from './assets/Day6a.jpg';
+import Day6b from './assets/Day6b.jpg';
+import Day6c from './assets/Day6c.jpg';
+import Day6z from './assets/Day6z.jpg';
+import Day6x from './assets/Day6x.jpg';
+
+import Day7 from './assets/Day7.jpg';
+import Day7a from './assets/Day7a.jpg';
+import Day7b from './assets/Day7b.jpg';
 
 function App() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -73,8 +84,24 @@ function App() {
       images: [dDay5b,dDay5a,dDay5],
       reflection: 'Visiting the MMDA was an eye-opening experience as we saw firsthand how they manage the complex task of traffic regulation and public safety in such a densely populated area. We were impressed by their integrated systems that help ease congestion and ensure public safety in Metro Manila. The afternoon trip to LRT-2 gave us an appreciation for modern public transportation systems and how they contribute to sustainable urban development. The experience highlighted the importance of technological solutions in urban mobility and how they can improve the daily lives of commuters.'
     },
+    {
+      id: 6,
+      title: 'Day 6',
+      description: 'Our sixth day began with cool mountain air as we arrived in Baguio City, known as the "Summer Capital of the Philippines." The morning started with a visit to the Strawberry Farm in La Trinidad, Benguet. Surrounded by rows of strawberry plants, we got to witness firsthand how strawberries are grown and harvested. Some of us even had the chance to pick our own, savoring the fresh sweetness that can only come from fruit picked right off the vine. Next, we visited the Bell Church, a peaceful and colorful Taoist temple. With its intricate architecture, dragon statues, and tranquil surroundings, it offered a unique cultural and spiritual experience. We took some time to appreciate the harmony and symbolism the temple presented. After lunch, our journey continued with a visit to the Philippine Military Academy (PMA). There, we learned about the lives and discipline of the country’s future military leaders. Walking around the campus, we saw historical displays, military equipment, and felt a sense of national pride and respect for service and dedication. Our last stop for the day was the ever-popular Mines View Park. The breathtaking view of the Cordillera mountains and old mining town below was a perfect way to end our Baguio experience. We explored local souvenir stalls, tried on traditional attire, and enjoyed some local snacks while taking in the scenery.',
+      date: '2025-04-12',
+      images: [Day6, Day6a, Day6b, Day6z, Day6x, Day6c],
+      reflection: 'Today’s journey through Baguio reminded us not only of the beauty of nature and culture but also of the value of discipline, service, and peaceful reflection. Each destination gave us a deeper appreciation for the diverse experiences the Philippines has to offer—from agriculture and spirituality to national pride and breathtaking landscapes. As the day ended, we carried with us not just souvenirs, but meaningful memories and new perspectives.'
+      },
+      {
+      id: 7,
+      title: 'Day 7',
+      description: 'On our final day, we spent a relaxed morning at Burnham Park, one of Baguio’s most iconic and family-friendly destinations. Surrounded by pine trees and fresh mountain breeze, we enjoyed exploring the park’s peaceful atmosphere. Some of us rode quadcycles around the open paths, while others had fun rowing boats across the calm man-made lake — laughter and joy filled the air as we made the most of our last few hours in Baguio. After soaking in the park’s charm, we had our last lunch together in the city, sharing stories and memories from the past days. Shortly after, we began our journey back to Manila, carrying with us the unforgettable experiences of the tour.',
+      date: '2025-04-13',
+      images: [Day7b, Day7a, Day7],
+      reflection: 'Though our adventure has come to an end, the last day reminded us of the importance of slowing down, enjoying simple moments, and being present with one another. From the excitement of new places to quiet moments of reflection, this journey brought us closer not just to the beauty of the Philippines, but also to each other. As we return home, we do so with full hearts and lasting memories.'},
+
   ];
-    const preloadImages = (images) => {
+  const preloadImages = (images) => {
     images.forEach((src) => {
       const img = new Image();
       img.src = src;
